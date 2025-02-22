@@ -1,0 +1,118 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Space Mono", monospace;
+    background-color: cornsilk;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    min-height: 100vh;
+    overflow-y: auto; /* Ensure scrolling when needed */
+}
+
+/* Header */
+header {
+    width: 100%;
+    text-align: left;
+    padding: 10px;
+}
+
+#oplink {
+    text-decoration: none;
+    color: darkred;
+    font-size: 1.5rem;
+}
+
+/* Main Content */
+#welcome {
+    font-size: 3rem;
+    margin: 10px 0;
+}
+
+.divider {
+    border-top: 2px solid black;
+    width: 100%;
+    margin: 10px 0;
+}
+
+p {
+    margin: 10px 0;
+    font-size: 1rem;
+}
+
+/* Image Container */
+.image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#imagetext {
+    color: darkred;
+    text-decoration: underline;
+    margin-bottom: 10px;
+}
+
+img {
+    width: 80%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Things to See Section */
+#things {
+    margin-top: 20px;
+    margin-bottom: 80px; /* Prevents overlap with the footer */
+}
+
+#tlist {
+    display: block;
+    margin-top: 10px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: darkred;
+}
+
+/* Footer */
+.footer {
+    width: 100%;
+    background: cornsilk;
+    padding: 15px 0;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+.footer .social-icons a {
+    font-size: 2rem;
+    color: black;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+.footer .social-icons a:hover {
+    color: darkred;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #welcome {
+        font-size: 2rem;
+    }
+    img {
+        width: 90%;
+    }
+    .footer .social-icons a {
+        font-size: 1.5rem;
+    }
+}
