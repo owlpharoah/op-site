@@ -1,4 +1,4 @@
-/* General Styles */
+
 * {
     margin: 0;
     padding: 0;
@@ -14,10 +14,10 @@ body {
     text-align: center;
     padding: 20px;
     min-height: 100vh;
-    overflow-y: auto; /* Ensure scrolling when needed */
+    overflow-y: auto;
 }
 
-/* Header */
+
 header {
     width: 100%;
     text-align: left;
@@ -30,7 +30,7 @@ header {
     font-size: 1.5rem;
 }
 
-/* Main Content */
+
 #welcome {
     font-size: 3rem;
     margin: 10px 0;
@@ -47,7 +47,7 @@ p {
     font-size: 1rem;
 }
 
-/* Image Container */
+
 .image-container {
     display: flex;
     flex-direction: column;
@@ -68,10 +68,10 @@ img {
     border-radius: 10px;
 }
 
-/* Things to See Section */
+
 #things {
     margin-top: 20px;
-    margin-bottom: 80px; /* Prevents overlap with the footer */
+    margin-bottom: 80px; 
 }
 
 #tlist {
@@ -82,7 +82,7 @@ img {
     color: darkred;
 }
 
-/* Footer */
+
 .footer {
     width: 100%;
     background: cornsilk;
@@ -104,7 +104,7 @@ img {
     color: darkred;
 }
 
-/* Responsive Design */
+
 @media (max-width: 768px) {
     #welcome {
         font-size: 2rem;
