@@ -1,9 +1,10 @@
-
+/* General Styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Space Mono", monospace;
+
     background-color: cornsilk;
 }
 
@@ -14,10 +15,10 @@ body {
     text-align: center;
     padding: 20px;
     min-height: 100vh;
-    overflow-y: auto;
+    overflow-y: auto; /* Ensure scrolling when needed */
 }
 
-
+/* Header */
 header {
     width: 100%;
     text-align: left;
@@ -30,7 +31,15 @@ header {
     font-size: 1.5rem;
 }
 
+#oplink:hover 
+{
+    
+    color:blue;
 
+}
+
+
+/* Main Content */
 #welcome {
     font-size: 3rem;
     margin: 10px 0;
@@ -47,7 +56,7 @@ p {
     font-size: 1rem;
 }
 
-
+/* Image Container */
 .image-container {
     display: flex;
     flex-direction: column;
@@ -69,20 +78,30 @@ img {
 }
 
 
+/* Things to See Section */
 #things {
     margin-top: 20px;
-    margin-bottom: 80px; 
+    margin-bottom: 80px; /* Prevents overlap with the footer */
 }
 
 #tlist {
     display: block;
     margin-top: 10px;
-    text-decoration: none;
-    font-size: 1.2rem;
+    text-decoration:none;
+    font-size: 1rem;
     color: darkred;
+    text-align: center;
+    position: relative;
 }
 
+#tlist:hover
+{
+    color: blue;
+    text-shadow: 10px;
+    
+}
 
+/* Footer */
 .footer {
     width: 100%;
     background: cornsilk;
@@ -104,7 +123,7 @@ img {
     color: darkred;
 }
 
-
+/* Responsive Design */
 @media (max-width: 768px) {
     #welcome {
         font-size: 2rem;
@@ -116,3 +135,4 @@ img {
         font-size: 1.5rem;
     }
 }
+
