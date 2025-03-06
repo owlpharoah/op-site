@@ -15,7 +15,7 @@ body {
     text-align: center;
     padding: 20px;
     min-height: 100vh;
-    overflow-y: auto; /* Ensure scrolling when needed */
+    overflow-y: auto; 
 }
 
 
@@ -78,7 +78,6 @@ img {
 }
 
 
-
 #things {
     margin-top: 20px;
     margin-bottom: 80px; 
@@ -94,12 +93,14 @@ img {
     position: relative;
 }
 
-#tlist:hover
+#tlist:hover , #projectthings:hover
 {
     color: blue;
     text-shadow: 10px;
     
 }
+
+
 
 
 .footer {
@@ -134,5 +135,52 @@ img {
     .footer .social-icons a {
         font-size: 1.5rem;
     }
+    .sepcolumns {
+        flex-direction: column; 
+        align-items: center; 
+        gap: 10px;
+    }
 }
+
+
+/* columns for project */
+.sepcolumns {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    gap: 250px;
+}
+
+
+.left-column, .right-column {
+    flex: 1;
+    padding: 0px;
+}
+
+#projectthings
+{
+    margin-top: 10px;
+    text-decoration:none;
+    font-size: 1rem;
+    color: darkred;
+}
+
+
+.terminal {
+    background-color: #272822; 
+    color: #a6e22e; 
+    font-family: "Courier New", monospace;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    overflow-x: auto;
+    text-decoration: none;
+
+}
+
+.terminal::before {
+    content: "$ ";
+    color: #f92672; 
+}
+
 
