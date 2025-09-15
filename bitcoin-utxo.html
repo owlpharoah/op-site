@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I cant split cash, but i can split bitcoins?</title>
+
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <a id="oplink" href="blogs.html">back to blogs</a>
+</header>
+
+<main class="blog">
+    <h1 id="welcome">I cant split cash, but i can split bitcoins?</h1>
+    <div class="divider"></div>
+
+    <p style="color: darkred;">sep 2025</p>
+
+    <p>
+    Bitcoin does not store balances.
+    It only tracks unspent transaction outputs, called <b>UTXOs</b>.
+    </p>
+    
+    <p>
+        A UTXO is a chunk of bitcoin created by a past transaction
+        that has not been spent yet.
+        Your balance is just the sum of the UTXOs you control.
+    </p>
+
+    <p>
+        You cannot partially spend a UTXO.
+        You must spend it fully and receive change as a new UTXO.
+    </p>
+
+    <p>
+        Correlate this with the case of currency.
+        A 10 dollar bill cant be split into 2 five dollars directly.
+        Instead, a 10 dollars is paid, and the return is provided as different bills 
+    </p>
+
+    <p>
+        The same is the case with bitcoin.
+    </p>
+
+    <p>
+        If someone wants to spend 0.3 BTC but only has a 1BTC UTXO, they spend that UTXO completely.
+        The transaction creates one output of 0.3BTC for the receipient and another UTXO of 0.7 BTC back to the sender as change.
+    </p>
+
+    <p>
+        <b>
+            Each UTXO can be spent only once.
+            This single rule prevents double spending.
+        </b>
+    </p>
+
+
+    <div id="things">
+        <a id="tlist" href="blogs.html">all posts</a>
+    </div>
+</main>
+
+<footer class="footer">
+    <div class="social-icons">
+        <a href="https://github.com/owlpharoah" target="_blank"><i class="fa-brands fa-github"></i></a>
+        <a href="https://x.com/owlpharoah3000" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+    </div>
+</footer>
+
+</body>
+</html>
